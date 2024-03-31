@@ -75,6 +75,36 @@ import LinkButton from "@/components/LinkButton";
 - Server-side rendering
 - Async components (Math.random on server and client example)
 
+## `use client`
+
+- Some libraries (e.g. typewriter-effect) makes use of `useState` and `useEffect` in their implementation which can cause issues when used on the server. If you see weird errors, consider if you're using an imported UI component that may implicitly require `use client`.
+
+```tsx title="src/pages/index.tsx" {1,3,9-15}
+"use client"; // for typewriter-effect
+
+import Typewriter from "typewriter-effect";
+
+...
+
+export default function HeroBlock() {
+  return (
+    <Typewriter
+      options={{
+        strings: ["Tech for social good", "Carleton Blueprint"],
+        autoStart: true,
+        loop: true,
+      }}
+    />
+  );
+}
+```
+
+:::tip[Did you know?]
+
+This is only a temporary issue and will slowly be resolved as more libraries are updated to be compatible with server-side rendering.
+
+:::
+
 ## API Routes
 
 - Touch very briefly on API routes. No in-depth knowledge required. (just know this exists)

@@ -81,11 +81,11 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "About Us",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "carletonblueprint.org",
+              to: "https://carletonblueprint.org",
             },
           ],
         },
