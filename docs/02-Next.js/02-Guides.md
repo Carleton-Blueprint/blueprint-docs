@@ -27,6 +27,8 @@ Make sure to always include a `.env.local.example` file in your project to provi
 
 :::
 
+---
+
 ## File-based Routing
 
 Next.js offers a file-based router by default (no need to install additional libraries like `react-router-dom`).
@@ -53,6 +55,8 @@ All you need to know that might be Blueprint specific is that we use the newer *
 - Global folders: `src/lib`, `src/components`.
 - There should only be `page.tsx`, `layout.tsx`, possibly some CSS files or even 1 or 2 global components like `Footer` or `Navbar` in page folders.
 
+---
+
 ## Import aliases
 
 ```tsx title="src/app/components/ProjectsBlock.tsx"
@@ -64,16 +68,22 @@ import LinkButton from "@/components/LinkButton";
 
 - include screnshot of project dir
 
+---
+
 ## Image Optimization
 
 - `import Image from "next/image";`
 - Styling images using Tailwind (link to Tailwind docs section)
 - Image colocation (import from `./assets`)
 
+---
+
 ## Data Fetching
 
 - Server-side rendering
 - Async components (Math.random on server and client example)
+
+---
 
 ## `use client`
 
@@ -104,6 +114,8 @@ export default function HeroBlock() {
 This is only a temporary issue and will slowly be resolved as more libraries are updated to be compatible with server-side rendering.
 
 :::
+
+---
 
 ## API Routes
 
