@@ -3,12 +3,12 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "cuBlueprint",
-  tagline: "Tech for social good",
+  title: "Carleton Blueprint",
+  tagline: "Tech for social good 🌎",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://Carleton-Blueprint.github.io",
+  url: "https://cublueprint.vercel.app",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -67,11 +67,11 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/Carleton-Blueprint",
           label: "GitHub",
           position: "right",
         },
@@ -93,16 +93,16 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "LinkTree",
+              href: "https://linktr.ee/cublueprint",
+            },
+            {
+              label: "Instagram",
+              href: "https://tr.ee/pnM2Q4F_uq",
             },
             {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://tr.ee/PginhINpfv",
             },
           ],
         },
@@ -115,12 +115,12 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/Carleton-Blueprint",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Carleton Blueprint`,
     },
     prism: {
       theme: prismThemes.github,

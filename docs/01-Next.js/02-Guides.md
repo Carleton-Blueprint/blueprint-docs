@@ -1,6 +1,6 @@
-# Features
+# Guides
 
-This page lists some of the key "good-to-know" features of Next.js that are extensively used in developing Blueprint apps.
+This page lists some of the key "good-to-know" features of Next.js that are extensively used in developing Blueprint apps. As well, it provides some **Blueprint-specific guidelines** for using these features.
 
 ## Environment Variables
 
@@ -48,14 +48,14 @@ All you need to know that might be Blueprint specific is that we use the newer *
 
 ![App Router vs Pages Router](./img/routers.png)
 
+- `src` folder still in use
 - Colocation: `./assets`, `./components` in page folders.
 - Global folders: `src/lib`, `src/components`.
 - There should only be `page.tsx`, `layout.tsx`, possibly some CSS files or even 1 or 2 global components like `Footer` or `Navbar` in page folders.
 
-## Import aliases and absolute imports
+## Import aliases
 
-```
-from projectsblock (include screenshot of directory)
+```tsx title="src/app/components/ProjectsBlock.tsx"
 import Image from "next/image";
 import BlockContainer from "./BlockContainer";
 import image from "../assets/projectpic.png";
