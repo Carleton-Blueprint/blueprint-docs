@@ -89,6 +89,13 @@ import LinkButton from "@/components/LinkButton";
 
 - Some libraries (e.g. typewriter-effect) makes use of `useState` and `useEffect` in their implementation which can cause issues when used on the server. If you see weird errors, consider if you're using an imported UI component that may implicitly require `use client`.
 
+:::tip[Blueprint Guidelines]
+
+- When using `use client`, always try to refactor out the component such that `use client` is applied to the **smallest, most low-level component** possible.
+- Always **minimize the amount of code** in a `use client` component to optimize performance.
+
+:::
+
 ```tsx title="src/pages/index.tsx" {1,3,9-15}
 "use client"; // for typewriter-effect
 
