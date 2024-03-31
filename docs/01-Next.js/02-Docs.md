@@ -8,9 +8,9 @@ Read more from the official Next.js [docs](https://nextjs.org/docs/app/building-
 
 :::danger[Important Notes]
 
-**Always** store sensitive information like API keys, passwords, and other secrets in environment variables. **Never** hardcode them in your codebase.
+- **Always** store sensitive information like API keys, passwords, and other secrets in environment variables. **Never** hardcode them in your codebase.
 
-**Never** commit the `.env.local` file to your repository (it should be added to `.gitignore`). This is to ensure that sensitive information like API keys, passwords, and other secrets are not exposed.
+- **Never** commit the `.env.local` file to your repository (it should be added to `.gitignore`). This is to ensure that sensitive information like API keys, passwords, and other secrets are not exposed.
 
 :::
 
@@ -26,3 +26,55 @@ Read more from the official Next.js [docs](https://nextjs.org/docs/app/building-
 Make sure to always include a `.env.local.example` file in your project to provide a template for developers to fill in their own environment variables.
 
 :::
+
+## File-based Routing
+
+Next.js offers a file-based router by default (no need to install additional libraries like `react-router-dom`).
+
+Since I already know I can't do a better job at explaning how all this works than the official Next.js docs, I'll just link you to the [**File-based Routing**](https://nextjs.org/docs/app/building-your-application/routing) section of the Next.js docs. This might also be useful: [**Next.js Project Structure (special file names)**](https://nextjs.org/docs/getting-started/project-structure).
+
+![File-based Routing](https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Froute-segments-to-path-segments.png&w=1920&q=75)
+
+Here are some key questions that the official docs answer:
+
+- How do I create a new page or route?
+- How do **layouts** work to create shared components like Navbars and Footers in **nested routes**?
+- How do I create dynamic routes with **URL parameters** and **query parameters**? (e.g. `/projects/:id` and `/projects?category=web-dev`)
+- How do I get the **current route** in my components? (e.g. `useParams`, `useSearchParams`, `useRouter`, `usePathname`)
+
+### Blueprint-specific guides
+
+All you need to know that might be Blueprint specific is that we use the newer **App Router** instead of the older **Pages Router** wherever we can.
+
+![App Router vs Pages Router](./img/routers.png)
+
+- Colocation: `./assets`, `./components` in page folders.
+- Global folders: `src/lib`, `src/components`.
+- There should only be `page.tsx`, `layout.tsx`, possibly some CSS files or even 1 or 2 global components like `Footer` or `Navbar` in page folders.
+
+## Import aliases and absolute imports
+
+```
+from projectsblock (include screenshot of directory)
+import Image from "next/image";
+import BlockContainer from "./BlockContainer";
+import image from "../assets/projectpic.png";
+import LinkButton from "@/components/LinkButton";
+```
+
+- include screnshot of project dir
+
+## Image Optimization
+
+- `import Image from "next/image";`
+- Styling images using Tailwind (link to Tailwind docs section)
+- Image colocation (import from `./assets`)
+
+## Data Fetching
+
+- Server-side rendering
+- Async components (Math.random on server and client example)
+
+## API Routes
+
+- Touch very briefly on API routes. No in-depth knowledge required. (just know this exists)

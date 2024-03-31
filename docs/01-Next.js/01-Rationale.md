@@ -28,9 +28,9 @@ As well, the [documentation](https://nextjs.org/docs) from the Vercel team _(who
 
 ## SEO and Performance
 
-Next.js is also known for its **SEO** and **performance** benefits. It's a server-rendered framework, which means that your pages are **pre-rendered** on the server before being sent to the client. This is great for SEO because search engines can easily crawl your site and index your pages.
+Next.js is also known for its **SEO** and **performance** benefits. It's a server-rendered framework, which means that your pages are **pre-rendered** on the server before being sent to the client.
 
-It's also great for **performance** because your users get a fast-loading page right off the bat (unlike traditional React apps, which have to wait for the JavaScript to load before rendering the page on the browser).
+It's also great for **performance** because your users get a fast-loading page right off the bat (unlike traditional React apps, which have to wait for the JavaScript to load before rendering the page on the browser). Next.js also offers some built-in optimization mechanisms such as **lazy-loading** and **image optimization** _(these are all automatic, there's nothing extra that we as developers have to do)_.
 
 The image below shows a preview of the response from the old Carleton Blueprint website.
 
