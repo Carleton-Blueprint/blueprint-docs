@@ -1,0 +1,3 @@
+shadcn is collection of reusable, accessible, and customizable react components that we can use on our Next.js website.
+
+It's already set up on our repo and very easy to use. Pick the component you want from their **[documentation](https://ui.shadcn.com/docs/components/)** and follow the installation instructions. Once installed the component file will be accessible under src/components/ui and can be imported by following usage instructions. The components work with with **[Tailwind CSS](https://tailwindcss.com/docs/)** for theming so you can set className to change the styling properties.
