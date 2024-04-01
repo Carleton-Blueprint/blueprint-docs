@@ -21,7 +21,3 @@ I usually pull up these links before working on any Blueprint project. They're e
 #### [react-query](https://tanstack.com/query/v4/docs/framework/react/overview)
 
 #### [ChatGPT](https://chat.openai.com/)
-
-### Notes
-
-This documentation is entirely open source and can be found on our [GitHub](https://github.com/Carleton-Blueprint/blueprint-docs). At the bottom of each page, click on the **"Edit This Page"** link to make changes.
