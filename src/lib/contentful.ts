@@ -8,12 +8,12 @@ export type ImageType = {
   caption: string;
 };
 
-export function useImages() {
+export function useImages(eventID: string) {
   const {
     siteConfig: { customFields },
   } = useDocusaurusContext();
 
-  async function fetchImages(eventID: string) {
+  async function fetchImages() {
     const client = createClient({
       space: (customFields.CONTENTFUL_SPACE_ID as string) ?? "",
       environment: "master",

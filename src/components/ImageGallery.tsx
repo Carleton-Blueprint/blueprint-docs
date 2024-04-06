@@ -4,14 +4,14 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { ImageType, useImages } from "../lib/contentful";
 
-export default function App() {
+export default function ImageGallery({ eventID }: { eventID: string }) {
   const [index, setIndex] = useState(-1);
   const [images, setImages] = useState<ImageType[]>([]);
-  const { fetchImages } = useImages();
+  const { fetchImages } = useImages(eventID);
 
   useEffect(() => {
     async function loadData() {
-      const res = await fetchImages("D9x6aSG9cIUzAU8rzzOMG");
+      const res = await fetchImages();
       setImages(res);
     }
     loadData();
