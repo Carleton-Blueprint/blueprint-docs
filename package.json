@@ -19,9 +19,12 @@
     "@docusaurus/preset-classic": "3.2.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "contentful": "^10.8.7",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-grid-gallery": "^1.0.1-alpha.0",
+    "yet-another-react-lightbox": "^3.17.2"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.2.0",

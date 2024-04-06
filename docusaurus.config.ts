@@ -14,6 +14,13 @@ const config: Config = {
   baseUrl: "/",
   trailingSlash: false,
 
+  // env vars
+  // https://docusaurus.io/docs/deployment#using-environment-variables
+  customFields: {
+    CONTENTFUL_SPACE_ID: "7m5nzpb6x3ap",
+    CONTENTFUL_ACCESS_TOKEN: "5MxQQuq-Nt3HCxyXGRbERXBwkTzB2PXOo4HLyWOZhz4",
+  },
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Carleton-Blueprint", // Usually your GitHub org/user name.
