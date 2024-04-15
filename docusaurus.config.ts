@@ -67,7 +67,7 @@ const config: Config = {
       title: "Blueprint",
       logo: {
         alt: "Blueprint logo",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
         {
