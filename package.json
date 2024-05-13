@@ -24,6 +24,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-grid-gallery": "^1.0.1-alpha.0",
+    "react-social-media-embed": "^2.5.13",
     "yet-another-react-lightbox": "^3.17.2"
   },
   "devDependencies": {
